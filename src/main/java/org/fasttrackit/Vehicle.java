@@ -12,6 +12,10 @@ public class Vehicle {
         return 10.1;
     }
 
+    public double accelerate(double speed, double time) {
+        return 20;
+    }
+
     public String getName() {
         return name;
     }
@@ -26,5 +30,13 @@ public class Vehicle {
 
     public void setColor(String color) {
         this.color = color;
+    }
+
+    @Override
+    public String toString() {
+        return "Vehicle{" +
+                "name='" + name + '\'' +
+                ", color='" + color + '\'' +
+                '}';
     }
 }

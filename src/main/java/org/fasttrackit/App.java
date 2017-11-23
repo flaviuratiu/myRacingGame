@@ -5,32 +5,36 @@ public class App {
         Race race = new Race();
 
         Track track = new Track();
-        track.length = 100.5;
+        track.setLength(100);
 
-        race.track = track;
+        race.setTrack(track);
 
         Engine engine = new Engine();
-        engine.manufacturer = "Volvo";
+        engine.setManufacturer("Volvo");
 
-        Car car1 = new Car();
-        car1.name = "Volvo";
-        car1.color = "black";
-        car1.fuelLevel = 100.00;
-        car1.mileage = 12.5;
-        car1.doorCount = 4;
-        car1.engine = engine;
+        Car car1 = new Car(engine);
+        car1.setName(" Volvo       ");
+        car1.setColor("black");
+        car1.setFuelLevel(100.0);
+        car1.setMileage(12.5);
+        car1.setDoorCount(4);
+
 
         Engine engine2 = new Engine();
-        engine2.manufacturer = "Honda";
+        engine2.setManufacturer("Honda");
 
-        Car car2 = new Car();
-        car2.name = "Honda";
-        car2.color = "red";
-        car2.fuelLevel = 100.00;
-        car2.mileage = 13.5;
-        car2.doorCount = 2;
-        car2.engine = engine2;
+        Car car2 = new Car(engine2);
+        car2.setName("Honda");
+        car2.setColor("red");
+        car2.setFuelLevel(100);
+        car2.setMileage(13.5);
+        car2.setDoorCount(2);
 
+        Vehicle vehicle = new Vehicle();
+        vehicle.accelerate(20.5);
+
+
+        AutoVehicle autoVehicle = new AutoVehicle(new Engine());
 
     }
 }

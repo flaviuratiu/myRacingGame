@@ -1,12 +1,18 @@
 package org.fasttrackit;
 
-public class Car {
+public class Car extends AutoVehicle {
 
-    String name;
-    String color;
-    int doorCount;
-    double mileage;
-    double fuelLevel;
-    Engine engine;
+    private int doorCount;
 
+    public Car(Engine engine) {
+        super(engine);
+    }
+
+    public int getDoorCount() {
+        return doorCount;
+    }
+
+    public void setDoorCount(int doorCount) {
+        this.doorCount = doorCount;
+    }
 }

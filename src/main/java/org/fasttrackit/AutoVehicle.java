@@ -14,6 +14,22 @@ public class AutoVehicle extends Vehicle {
         this(new Engine());
     }
 
+    @Override
+    public double accelerate(double speed) {
+        double finalSpeed = getCurrentSpeed() + speed;
+        setCurrentSpeed(finalSpeed);
+
+        double traveledDistance = finalSpeed / 60;
+
+        double spentFuel = traveledDistance * mileage / 100;
+
+        fuelLevel -= spentFuel;
+//        same as
+//        fuelLevel = fuelLevel - spentFuel;
+
+        return traveledDistance;
+    }
+
     public double getMileage() {
         return mileage;
     }

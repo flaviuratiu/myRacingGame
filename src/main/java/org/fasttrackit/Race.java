@@ -3,8 +3,8 @@ package org.fasttrackit;
 public class Race {
 
     private Track track;
-    private Car firstCompetitor;
-    private Car secondCompetitor;
+    private Vehicle firstCompetitor;
+    private Vehicle secondCompetitor;
 
     public void start() {
         Engine engine = new Engine();
@@ -43,19 +43,19 @@ public class Race {
         this.track = track;
     }
 
-    public Car getFirstCompetitor() {
+    public Vehicle getFirstCompetitor() {
         return firstCompetitor;
     }
 
-    public void setFirstCompetitor(Car firstCompetitor) {
+    public void setFirstCompetitor(Vehicle firstCompetitor) {
         this.firstCompetitor = firstCompetitor;
     }
 
-    public Car getSecondCompetitor() {
+    public Vehicle getSecondCompetitor() {
         return secondCompetitor;
     }
 
-    public void setSecondCompetitor(Car secondCompetitor) {
+    public void setSecondCompetitor(Vehicle secondCompetitor) {
         this.secondCompetitor = secondCompetitor;
     }
 }

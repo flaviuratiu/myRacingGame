@@ -4,12 +4,11 @@ public class Vehicle {
 
     private String name;
     private String color;
+    private double currentSpeed;
 
     public double accelerate(double speed) {
-
-        System.out.println(speed);
-
-        return 10.1;
+        currentSpeed += speed;
+        return currentSpeed / 60;
     }
 
     public double accelerate(double speed, double time) {
@@ -30,6 +29,14 @@ public class Vehicle {
 
     public void setColor(String color) {
         this.color = color;
+    }
+
+    public double getCurrentSpeed() {
+        return currentSpeed;
+    }
+
+    public void setCurrentSpeed(double currentSpeed) {
+        this.currentSpeed = currentSpeed;
     }
 
     @Override

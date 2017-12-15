@@ -7,6 +7,7 @@ public class Vehicle {
     private double currentSpeed;
 
     public double accelerate(double speed) {
+        System.out.println("Accelerate implementation from Vehicle.");
         currentSpeed += speed;
         return currentSpeed / 60;
     }

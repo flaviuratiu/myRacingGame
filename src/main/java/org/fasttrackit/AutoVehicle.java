@@ -16,6 +16,7 @@ public class AutoVehicle extends Vehicle {
 
     @Override
     public double accelerate(double speed) {
+        System.out.println("Accelerate implementation from AutoVehicle.");
         double finalSpeed = getCurrentSpeed() + speed;
         setCurrentSpeed(finalSpeed);
 
